@@ -33,7 +33,7 @@ def quantization_error(BitWidth):
     Error = np.sum(np.abs(Quantized_value - data))
 
     # Plotting sine curve and its quantized version using matplotlib
-    print('Error for {0} bit quantization: {1:.2f}'.format(BitWidth, Error))
+    print('Error for {0} bit quantization: {1:.2f}'.format(BitWidth, error))
     plt.figure()
     plt.plot(x, y, label='Original')
     plt.plot(x, Quantized_value, label='Quantized', linestyle='--')
